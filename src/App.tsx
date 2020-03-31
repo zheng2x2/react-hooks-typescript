@@ -1,6 +1,7 @@
 import React from 'react';
 import TodoForm from './components/TodoForm'
 import TodoList from './components/TodoList'
+import { TodosContextProvider } from './context/TodoContext'
 
 import Greetings from './prac/Greetings'
 import Counter from './prac/Counter'
@@ -18,8 +19,10 @@ const App: React.FC = () => {
   }
   return (
   <div>
-    <TodoForm /> <TodoList />
-
+    <TodosContextProvider>
+      <TodoForm />
+      <TodoList />
+    </TodosContextProvider>
 
 
 
