@@ -1,4 +1,7 @@
 import React from 'react';
+import TodoForm from './components/TodoForm'
+import TodoList from './components/TodoList'
+
 import Greetings from './prac/Greetings'
 import Counter from './prac/Counter'
 import MyForm from './prac/MyForm'
@@ -15,6 +18,12 @@ const App: React.FC = () => {
   }
   return (
   <div>
+    <TodoForm /> <TodoList />
+
+
+
+
+
     <Greetings name="Hello" onClick={onClick}/>
     <Counter />
     <MyForm onSubmit={onSubmit} />
